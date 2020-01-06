@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 import MovieChars from "./MovieChars";
 
 class MovieList extends Component {
@@ -16,6 +16,12 @@ class MovieList extends Component {
     });
   };
 
+  closeData = () => {
+    this.setState({
+      showComponent: false
+    });
+  };
+
   render() {
     return (
       <div className='movie-card'>
@@ -24,6 +30,9 @@ class MovieList extends Component {
           <Card.Meta>{this.props.release_date}</Card.Meta>
         </Card>
         {this.state.showComponent ? <MovieChars movie={this.props} /> : null}
+        {this.state.showComponent ? (
+          <Button onClick={this.closeData}>Close</Button>
+        ) : null}
       </div>
     );
   }
