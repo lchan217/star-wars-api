@@ -44,7 +44,7 @@ class MovieContainer extends Component {
       );
     }
     return (
-      <div>
+      <div className='star-wars-movies'>
         <h1>Star Wars Movies</h1>
         {data}
       </div>
