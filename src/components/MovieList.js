@@ -8,19 +8,18 @@ class MovieList extends Component {
     this.state = {
       showComponent: false
     };
-    this._onCardClick = this._onCardClick.bind(this);
   }
 
-  _onCardClick() {
+  handleClick = () => {
     this.setState({
       showComponent: true
     });
-  }
+  };
 
   render() {
     return (
       <div className='movie-card'>
-        <Card onClick={this._onCardClick}>
+        <Card onClick={this.handleClick}>
           <Card.Header>{this.props.title}</Card.Header>
           <Card.Meta>{this.props.release_date}</Card.Meta>
         </Card>

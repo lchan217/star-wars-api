@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "semantic-ui-react";
 
 class MovieChars extends Component {
   constructor(props) {
@@ -26,11 +27,9 @@ class MovieChars extends Component {
     ));
   };
 
-  // this.state.characters.name
-
   render() {
     return (
-      <div>
+      <div className='movie-chars'>
         <h1>{this.props.movie.title}</h1>
         <ul>{this.fetchChars()}</ul>
       </div>
