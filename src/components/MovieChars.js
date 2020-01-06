@@ -21,7 +21,9 @@ class MovieChars extends Component {
       this.setState({ characters: arrayOfResponses })
     );
 
-    return this.state.characters.map(char => <li>{char.name}</li>);
+    return this.state.characters.map((char, index) => (
+      <li key={index}>{char.name}</li>
+    ));
   };
 
   // this.state.characters.name
@@ -30,7 +32,7 @@ class MovieChars extends Component {
     return (
       <div>
         <h1>{this.props.movie.title}</h1>
-        {this.fetchChars()}
+        <ul>{this.fetchChars()}</ul>
       </div>
     );
   }
