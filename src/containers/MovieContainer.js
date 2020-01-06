@@ -24,6 +24,15 @@ class MovieContainer extends Component {
 
   render() {
     let data;
+    const Moment = require("moment");
+    let sorted = this.state.movies.sort(
+      (a, b) =>
+        new Moment(a.release_date).format("YYYYMMDD") -
+        new Moment(b.release_date).format("YYYYMMDD")
+    );
+
+    debugger;
+
     if (this.state.isLoading) {
       data = (
         <Segment>
@@ -37,7 +46,7 @@ class MovieContainer extends Component {
     } else {
       data = (
         <Card.Group itemsPerRow={4}>
-          {this.state.movies.map((movie, index) => (
+          {sorted.map((movie, index) => (
             <MovieList key={index} {...movie} />
           ))}
         </Card.Group>
