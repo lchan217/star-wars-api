@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import { Button } from "semantic-ui-react";
+import { Dimmer, Loader, Image, Segment } from "semantic-ui-react";
 
 class MovieChars extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      characters: []
+      characters: [],
+      isLoading: true
     };
   }
 
-  fetchChars = () => {
+  componentDidMount() {
     let urls = [];
     this.props.movie.characters.map(char => {
       urls.push(char);
@@ -19,19 +20,35 @@ class MovieChars extends Component {
     );
 
     Promise.all(allRequests).then(arrayOfResponses =>
-      this.setState({ characters: arrayOfResponses })
+      this.setState({ characters: arrayOfResponses, isLoading: false })
     );
-
-    return this.state.characters.map((char, index) => (
-      <li key={index}>{char.name}</li>
-    ));
-  };
+  }
 
   render() {
+    let data;
+    if (this.state.isLoading) {
+      data = (
+        <Segment>
+          <Dimmer active inverted>
+            <Loader inverted>Loading</Loader>
+          </Dimmer>
+
+          <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+        </Segment>
+      );
+    } else {
+      data = (
+        <div className='movie-chars'>
+          {this.state.characters.map((char, index) => (
+            <li key={index}>{char.name}</li>
+          ))}
+        </div>
+      );
+    }
     return (
       <div className='movie-chars'>
         <h1>{this.props.movie.title}</h1>
-        <ul>{this.fetchChars()}</ul>
+        {data}
       </div>
     );
   }
