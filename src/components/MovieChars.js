@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Dimmer, Loader, Image, Segment } from "semantic-ui-react";
+import "./MovieChars.css";
 
 class MovieChars extends Component {
   constructor(props) {
@@ -38,9 +39,9 @@ class MovieChars extends Component {
       );
     } else {
       data = (
-        <div className='movie-chars'>
+        <div className='movie-char-grid'>
           {this.state.characters.map((char, index) => (
-            <li key={index}>{char.name}</li>
+            <div>{char.name}</div>
           ))}
         </div>
       );
@@ -48,6 +49,7 @@ class MovieChars extends Component {
     return (
       <div className='movie-chars'>
         <h1>{this.props.movie.title}</h1>
+        <h3>Characters</h3>
         {data}
       </div>
     );
