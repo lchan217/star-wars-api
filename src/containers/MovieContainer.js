@@ -31,8 +31,6 @@ class MovieContainer extends Component {
         new Moment(b.release_date).format("YYYYMMDD")
     );
 
-    debugger;
-
     if (this.state.isLoading) {
       data = (
         <Segment>
