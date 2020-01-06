@@ -20,6 +20,8 @@ class MovieChars extends Component {
     Promise.all(allRequests).then(arrayOfResponses =>
       this.setState({ characters: arrayOfResponses })
     );
+
+    return this.state.characters.map(char => <li>{char.name}</li>);
   };
 
   // this.state.characters.name
