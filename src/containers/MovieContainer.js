@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Dimmer, Loader, Image, Segment, Card } from "semantic-ui-react";
 
 class MovieContainer extends Component {
   constructor() {
