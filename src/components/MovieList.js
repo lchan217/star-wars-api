@@ -38,12 +38,13 @@ class MovieList extends Component {
 
   render() {
     return (
-      <div className='movie-card'>
-        <div onClick={this.handleClick} className='movie-title'>
-          {this.props.title}{" "}
+      <div>
+        <div onClick={this.handleClick} className='movie-card'>
+          <div className='movie-title'>{this.props.title} </div>
+          <br />
+          <div className='movie-date'>{this.props.release_date}</div>
         </div>
-        <br />
-        <div className='movie-date'>{this.props.release_date}</div>
+        {/* must move this.show() outside of movie-card or else close button won't work*/}
         {this.show()}
       </div>
     );
