@@ -47,10 +47,12 @@ class MovieChars extends Component {
       );
     }
     return (
-      <div className='movie-chars'>
-        <h1>{this.props.movie.title}</h1>
-        <h3>Characters</h3>
-        {data}
+      <div className='movie-chars-box'>
+        <div className='movie-chars-inner'>
+          <h1>{this.props.movie.title}</h1>
+          <h3>Characters</h3>
+          {data}
+        </div>
       </div>
     );
   }
