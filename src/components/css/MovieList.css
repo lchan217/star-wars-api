@@ -1,11 +1,30 @@
-.movie-card {
-  width: 150px;
-  background-color: rgb(79, 152, 214);
-  color: white;
-  padding: 20px; /*  change area inside boxes */
-  margin: 5px; /* change area around boxes */
-  border-radius: 5px;
-  text-align: center;
+@media screen and (max-width: 1140px) {
+  /* mobile */
+  .movie-card {
+    width: 250px;
+    background-color: rgb(56, 73, 92);
+    color: white;
+    padding: 20px; /*  change area inside boxes */
+    margin: 5px; /* change area around boxes */
+    text-align: center;
+  }
+
+  .movie-date {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  .movie-card {
+    width: 150px;
+    background-color: rgb(79, 152, 214);
+    color: white;
+    padding: 20px; /*  change area inside boxes */
+    margin: 5px; /* change area around boxes */
+    border-radius: 5px;
+    text-align: center;
+  }
 }
 
 .close-button {
