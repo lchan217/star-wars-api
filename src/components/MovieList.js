@@ -44,7 +44,7 @@ class MovieList extends Component {
           <br />
           <div className='movie-date'>{this.props.release_date}</div>
         </div>
-        {/* must move this.show() outside of movie-card or else close button won't work*/}
+        {/* must move this.show() outside of movie-card div or else close button won't work*/}
         {this.show()}
       </div>
     );

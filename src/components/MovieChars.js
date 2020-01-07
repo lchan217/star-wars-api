@@ -12,14 +12,18 @@ class MovieChars extends Component {
   }
 
   componentDidMount() {
+    //push all character urls into an array
     let urls = [];
     this.props.movie.characters.map(char => {
       urls.push(char);
     });
+
+    //fetch list of characters for specific movie
     const allRequests = urls.map(url =>
       fetch(url).then(response => response.json())
     );
 
+    //add all characters into state at one time
     Promise.all(allRequests).then(arrayOfResponses =>
       this.setState({ characters: arrayOfResponses, isLoading: false })
     );
@@ -28,6 +32,7 @@ class MovieChars extends Component {
   render() {
     let data;
     if (this.state.isLoading) {
+      // show loading status while app is fetching data
       data = (
         <Segment>
           <Dimmer active inverted>
@@ -38,6 +43,7 @@ class MovieChars extends Component {
         </Segment>
       );
     } else {
+      // show list of characters
       data = (
         <div className='movie-char-grid'>
           {this.state.characters.map((char, index) => (
