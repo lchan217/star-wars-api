@@ -8,6 +8,13 @@
   text-align: center;
 }
 
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: Transparent;
+  border: none;
+}
 .movie-date {
   font-size: 12px;
 }
@@ -17,17 +24,14 @@
   position: absolute;
   z-index: 1;
 
-  /* so box pops up in center */
-  left: 10%;
-  right: 10%;
-  top: 10%;
-  bottom: auto;
+  /* so box covers most of screen */
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
 
-  border-radius: 20px;
-  background: white;
-
+  background: rgb(240, 240, 240);
   padding: 20px;
-  width: 40%;
 
   /* whole box is centered */
   margin-left: auto;

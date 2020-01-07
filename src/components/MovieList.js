@@ -26,9 +26,11 @@ class MovieList extends Component {
     if (this.state.showComponent) {
       return (
         <div className='popup'>
+          <button className='close-button' onClick={this.closeData}>
+            Close
+          </button>
           <MovieChars movie={this.props} />
           <br />
-          <button onClick={this.closeData}>Close</button>
         </div>
       );
     }

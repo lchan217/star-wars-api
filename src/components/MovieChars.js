@@ -48,9 +48,11 @@ class MovieChars extends Component {
     }
     return (
       <div>
-        <h1>{this.props.movie.title}</h1>
-        <h3>Characters</h3>
-        {data}
+        <div className='character-list'>
+          <h1>{this.props.movie.title}</h1>
+          <h3>Characters</h3>
+          {data}
+        </div>
       </div>
     );
   }
