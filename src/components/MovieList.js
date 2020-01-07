@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
 import MovieChars from "./MovieChars";
+import "./MovieList.css";
 
 class MovieList extends Component {
   constructor() {
