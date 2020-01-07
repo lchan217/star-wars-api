@@ -40,9 +40,8 @@ class MovieList extends Component {
         <div onClick={this.handleClick} className='movie-title'>
           {this.props.title}{" "}
         </div>
-        <div className='movie-date'>
-          Release Date: {this.props.release_date}
-        </div>
+        <br />
+        <div className='movie-date'>{this.props.release_date}</div>
         {this.show()}
       </div>
     );
