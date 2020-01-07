@@ -7,7 +7,7 @@
   .movie-char-grid {
     grid-auto-flow: column;
 
-    /* explicit grid; second arg is height*/
+    /* explicit grid; 1st arg is #times you repeat, 2nd arg is space btwn columns*/
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(15, 30px);
   }
