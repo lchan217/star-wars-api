@@ -1,7 +1,7 @@
 @media screen and (max-width: 1140px) {
   /* mobile */
   .movie-card {
-    width: 250px;
+    width: 95%;
     background-color: rgb(56, 73, 92);
     color: white;
     padding: 20px; /*  change area inside boxes */
@@ -11,6 +11,25 @@
 
   .movie-date {
     text-align: right;
+  }
+
+  .popup {
+    /* keeps box on top */
+    position: absolute;
+    z-index: 1;
+
+    /* so box covers most of screen */
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: auto;
+
+    background: rgb(240, 240, 240);
+    padding: 20px;
+
+    /* whole box is centered */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -25,6 +44,25 @@
     border-radius: 5px;
     text-align: center;
   }
+
+  .popup {
+    /* keeps box on top */
+    position: absolute;
+    z-index: 1;
+
+    /* so box covers most of screen */
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+
+    background: rgb(240, 240, 240);
+    padding: 20px;
+
+    /* whole box is centered */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .close-button {
@@ -36,23 +74,4 @@
 }
 .movie-date {
   font-size: 12px;
-}
-
-.popup {
-  /* keeps box on top */
-  position: absolute;
-  z-index: 1;
-
-  /* so box covers most of screen */
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  bottom: 5%;
-
-  background: rgb(240, 240, 240);
-  padding: 20px;
-
-  /* whole box is centered */
-  margin-left: auto;
-  margin-right: auto;
 }
