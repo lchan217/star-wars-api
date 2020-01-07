@@ -5,9 +5,8 @@ import MovieContainer from "./components/MovieContainer";
 function App() {
   return (
     <div className='App'>
-      <div className='background'>
-        <MovieContainer />
-      </div>
+      <h1 className='center-title'>Star Wars Movies</h1>
+      <MovieContainer />
     </div>
   );
 }

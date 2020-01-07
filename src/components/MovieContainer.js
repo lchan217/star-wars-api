@@ -44,12 +44,13 @@ class MovieContainer extends Component {
       );
     } else {
       data = sorted.map((movie, index) => <MovieList key={index} {...movie} />);
+
+      return <div className='movie-card-grid'> {data} </div>;
     }
     return (
       <div className='star-wars-movies'>
-        <h1 className='center-title'>Star Wars Movies</h1>
         <br />
-        <div className='movie-card-grid'>{data}</div>
+        <div>{data}</div>
       </div>
     );
   }
