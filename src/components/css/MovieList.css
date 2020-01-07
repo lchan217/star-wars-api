@@ -3,10 +3,6 @@
   .movie-card {
     width: 95%;
     background-color: rgb(56, 73, 92);
-    color: white;
-    padding: 20px; /*  change area inside boxes */
-    margin: 5px; /* change area around boxes */
-    text-align: center;
   }
 
   .movie-date {
@@ -43,11 +39,8 @@
     width: 150px;
     height: 100px;
     background-color: rgb(79, 152, 214);
-    color: white;
-    padding: 20px; /*  change area inside boxes */
-    margin: 5px; /* change area around boxes */
+
     border-radius: 5px;
-    text-align: center;
   }
 
   .popup {
@@ -82,4 +75,11 @@
 
 .movie-date {
   font-size: 12px;
+}
+
+.movie-card {
+  color: white;
+  padding: 20px; /*  change area inside boxes */
+  margin: 5px; /* change area around boxes */
+  text-align: center;
 }
