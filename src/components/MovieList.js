@@ -23,6 +23,17 @@ class MovieList extends Component {
     });
   };
 
+  show = () => {
+    if (this.state.showComponent) {
+      return (
+        <div className='popup'>
+          <MovieChars movie={this.props} />
+          <button onClick={this.closeData}>Close</button>
+        </div>
+      );
+    }
+  };
+
   render() {
     return (
       <div className='movie-card'>
@@ -34,10 +45,7 @@ class MovieList extends Component {
             <Card.Meta>Release Date: {this.props.release_date}</Card.Meta>
           </span>
         </Card>
-        {this.state.showComponent ? <MovieChars movie={this.props} /> : null}
-        {this.state.showComponent ? (
-          <button onClick={this.closeData}>Close</button>
-        ) : null}
+        {this.show()}
       </div>
     );
   }

@@ -11,3 +11,25 @@
   font-size: 20px;
   color: blue;
 }
+
+.popup {
+  /* keeps box on top */
+  position: absolute;
+  z-index: 1;
+
+  /* so box pops up in center */
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: auto;
+
+  border-radius: 20px;
+  background: white;
+
+  padding: 20px;
+  width: 40%;
+
+  /* whole box is centered */
+  margin-left: auto;
+  margin-right: auto;
+}
