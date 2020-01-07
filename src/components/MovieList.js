@@ -27,6 +27,7 @@ class MovieList extends Component {
       return (
         <div className='popup'>
           <MovieChars movie={this.props} />
+          <br />
           <button onClick={this.closeData}>Close</button>
         </div>
       );
@@ -35,9 +36,11 @@ class MovieList extends Component {
 
   render() {
     return (
-      <div>
-        <div onClick={this.handleClick} className='movie-card'>
-          {this.props.title}
+      <div className='movie-card'>
+        <div onClick={this.handleClick} className='movie-title'>
+          {this.props.title}{" "}
+        </div>
+        <div className='movie-date'>
           Release Date: {this.props.release_date}
         </div>
         {this.show()}
