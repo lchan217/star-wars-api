@@ -1,6 +1,6 @@
 .movie-char-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10, 40px);
   grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(15, 50px);
 }
