@@ -6,12 +6,9 @@
   /* desktop */
   .movie-card-grid {
     /* explicit grid; 1st arg is #times you repeat, 2nd arg is space btwn columns*/
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 180px);
+    margin-left: 250px;
   }
-}
-
-@media screen and (max-width: 1140px) {
-  /* mobile */
 }
 
 .center-title {

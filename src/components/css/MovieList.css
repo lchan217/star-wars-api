@@ -1,34 +1,78 @@
-.movie-card {
-  width: 290px;
-  background-color: white;
-  padding: 20px;
-  margin: 5px;
-  border-radius: 20px;
-  border: 5px solid rgb(253, 228, 78);
+@media screen and (max-width: 1140px) {
+  /* mobile */
+  .movie-card {
+    width: 95%;
+    background-color: rgb(56, 73, 92);
+    color: white;
+    padding: 20px; /*  change area inside boxes */
+    margin: 5px; /* change area around boxes */
+    text-align: center;
+  }
+
+  .movie-date {
+    text-align: right;
+  }
+
+  .popup {
+    /* keeps box on top */
+    position: absolute;
+    z-index: 1;
+
+    /* so box covers most of screen */
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: auto;
+
+    background: rgb(240, 240, 240);
+    padding: 20px;
+
+    /* whole box is centered */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.movie-date {
-  color: gray;
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  .movie-card {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(79, 152, 214);
+    color: white;
+    padding: 20px; /*  change area inside boxes */
+    margin: 5px; /* change area around boxes */
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .popup {
+    /* keeps box on top */
+    position: absolute;
+    z-index: 1;
+
+    /* so box covers most of screen */
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+
+    background: rgb(240, 240, 240);
+    padding: 20px;
+
+    /* whole box is centered */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.popup {
-  /* keeps box on top */
+.close-button {
   position: absolute;
-  z-index: 1;
-
-  /* so box pops up in center */
-  left: 10%;
-  right: 10%;
-  top: 10%;
-  bottom: auto;
-
-  border-radius: 20px;
-  background: white;
-
-  padding: 20px;
-  width: 40%;
-
-  /* whole box is centered */
-  margin-left: auto;
-  margin-right: auto;
+  top: 15px;
+  right: 15px;
+  background-color: Transparent;
+  border: none;
+}
+.movie-date {
+  font-size: 12px;
 }
