@@ -1,3 +1,19 @@
+.movie-card-grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  .movie-card-grid {
+    /* explicit grid; 1st arg is #times you repeat, 2nd arg is space btwn columns*/
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* mobile */
+}
+
 .center-title {
   color: white;
   text-align: center;

@@ -41,7 +41,7 @@ class MovieChars extends Component {
       data = (
         <div className='movie-char-grid'>
           {this.state.characters.map((char, index) => (
-            <div>{char.name}</div>
+            <div key={index}>{char.name}</div>
           ))}
         </div>
       );

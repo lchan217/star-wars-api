@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Card } from "semantic-ui-react";
 import MovieChars from "./MovieChars";
 import "./css/MovieList.css";
 
@@ -28,6 +27,7 @@ class MovieList extends Component {
       return (
         <div className='popup'>
           <MovieChars movie={this.props} />
+          <br />
           <button onClick={this.closeData}>Close</button>
         </div>
       );
@@ -37,14 +37,12 @@ class MovieList extends Component {
   render() {
     return (
       <div className='movie-card'>
-        <Card onClick={this.handleClick}>
-          <span className='movie-card-detail'>
-            <Card.Header className='movie-card-title'>
-              {this.props.title}
-            </Card.Header>
-            <Card.Meta>Release Date: {this.props.release_date}</Card.Meta>
-          </span>
-        </Card>
+        <div onClick={this.handleClick} className='movie-title'>
+          {this.props.title}{" "}
+        </div>
+        <div className='movie-date'>
+          Release Date: {this.props.release_date}
+        </div>
         {this.show()}
       </div>
     );

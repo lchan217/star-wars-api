@@ -1,29 +1,14 @@
 .movie-card {
-  padding: 5px;
-  display: grid;
+  width: 290px;
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 5px solid rgb(253, 228, 78);
 }
 
-@media screen and (min-width: 1140px) {
-  /* desktop */
-  .movie-card {
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  /* mobile */
-  .movie-card {
-    width: 75%;
-  }
-}
-
-.movie-card-detail {
-  margin: 10px;
-  padding-left: 10px;
-}
-
-.movie-card-title {
-  font-size: 20px;
-  color: blue;
+.movie-date {
+  color: gray;
 }
 
 .popup {

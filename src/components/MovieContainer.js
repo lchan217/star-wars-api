@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Dimmer, Loader, Image, Segment, Card } from "semantic-ui-react";
+import { Dimmer, Loader, Image, Segment } from "semantic-ui-react";
 import MovieList from "./MovieList";
 import "./css/MovieContainer.css";
 
@@ -43,19 +43,13 @@ class MovieContainer extends Component {
         </Segment>
       );
     } else {
-      data = (
-        <Card.Group itemsPerRow={4}>
-          {sorted.map((movie, index) => (
-            <MovieList key={index} {...movie} />
-          ))}
-        </Card.Group>
-      );
+      data = sorted.map((movie, index) => <MovieList key={index} {...movie} />);
     }
     return (
       <div className='star-wars-movies'>
         <h1 className='center-title'>Star Wars Movies</h1>
         <br />
-        {data}
+        <div className='movie-card-grid'>{data}</div>
       </div>
     );
   }
