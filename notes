@@ -4,4 +4,9 @@ Assignment:
 -Column of 4 - list of movies and release date sorted chronologically
 -if you click on a movie, show list of characters (column of 3 from top to bottom?) without page refresh
 
--next steps: media queries, add comments, char list from top to bottom 
+Next steps: 
+- add media queries
+- add more-specific css 
+- add comments
+- readme
+- refactor
