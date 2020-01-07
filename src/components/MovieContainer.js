@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Dimmer, Loader, Image, Segment, Card } from "semantic-ui-react";
-import MovieList from "../components/MovieList";
+import MovieList from "./MovieList";
+import "./css/MovieContainer.css";
 
 class MovieContainer extends Component {
   constructor() {
@@ -52,7 +53,7 @@ class MovieContainer extends Component {
     }
     return (
       <div className='star-wars-movies'>
-        <h1 className='center'>Star Wars Movies</h1>
+        <h1 className='center-title'>Star Wars Movies</h1>
         <br />
         {data}
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import MovieContainer from "./containers/MovieContainer";
+import "./index.css";
+import MovieContainer from "./components/MovieContainer";
 
 function App() {
   return (

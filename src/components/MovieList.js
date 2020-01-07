@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Card, Button } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 import MovieChars from "./MovieChars";
-import "./MovieList.css";
+import "./css/MovieList.css";
 
 class MovieList extends Component {
   constructor() {
@@ -36,7 +36,7 @@ class MovieList extends Component {
         </Card>
         {this.state.showComponent ? <MovieChars movie={this.props} /> : null}
         {this.state.showComponent ? (
-          <Button onClick={this.closeData}>Close</Button>
+          <button onClick={this.closeData}>Close</button>
         ) : null}
       </div>
     );

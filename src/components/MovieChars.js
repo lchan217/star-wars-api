@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Dimmer, Loader, Image, Segment } from "semantic-ui-react";
-import "./MovieChars.css";
+import "./css/MovieChars.css";
 
 class MovieChars extends Component {
   constructor(props) {
