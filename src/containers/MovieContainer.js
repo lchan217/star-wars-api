@@ -52,7 +52,8 @@ class MovieContainer extends Component {
     }
     return (
       <div className='star-wars-movies'>
-        <h1>Star Wars Movies</h1>
+        <h1 className='center'>Star Wars Movies</h1>
+        <br />
         {data}
       </div>
     );

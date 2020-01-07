@@ -27,8 +27,12 @@ class MovieList extends Component {
     return (
       <div className='movie-card'>
         <Card onClick={this.handleClick}>
-          <Card.Header>{this.props.title}</Card.Header>
-          <Card.Meta>{this.props.release_date}</Card.Meta>
+          <span className='movie-card-detail'>
+            <Card.Header className='movie-card-title'>
+              {this.props.title}
+            </Card.Header>
+            <Card.Meta>Release Date: {this.props.release_date}</Card.Meta>
+          </span>
         </Card>
         {this.state.showComponent ? <MovieChars movie={this.props} /> : null}
         {this.state.showComponent ? (

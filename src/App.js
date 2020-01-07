@@ -5,7 +5,7 @@ import MovieContainer from "./containers/MovieContainer";
 function App() {
   return (
     <div className='App'>
-      <div>
+      <div className='background'>
         <MovieContainer />
       </div>
     </div>

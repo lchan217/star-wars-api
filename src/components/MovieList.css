@@ -1,3 +1,13 @@
 .movie-card {
   padding: 5px;
 }
+
+.movie-card-detail {
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.movie-card-title {
+  font-size: 20px;
+  color: blue;
+}
