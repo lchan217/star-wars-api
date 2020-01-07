@@ -49,7 +49,7 @@ class MovieContainer extends Component {
       <div className='star-wars-movies'>
         <h1 className='center-title'>Star Wars Movies</h1>
         <br />
-        {data}
+        <div className='movie-card-grid'>{data}</div>
       </div>
     );
   }
