@@ -1,6 +1,9 @@
-.movie-char-grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(15, 50px);
+@media screen and (min-width: 1140px) {
+  /* settings for desktop */
+  .movie-char-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(15, 50px);
+  }
 }
