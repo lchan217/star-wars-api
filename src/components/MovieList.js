@@ -35,14 +35,9 @@ class MovieList extends Component {
 
   render() {
     return (
-      <div className='movie-card'>
-        {/* <Card onClick={this.handleClick}> */}
-        <span className='movie-card-detail'>
-          <div className='header-movie-card-title'>{this.props.title}</div>
-          <div className='move-card-meta'>
-            Release Date: {this.props.release_date}
-          </div>
-        </span>
+      <div onClick={this.handleClick} className='movie-card'>
+        {this.props.title}
+        Release Date: {this.props.release_date}
         {this.show()}
       </div>
     );

@@ -12,18 +12,7 @@
 @media screen and (max-width: 1140px) {
   /* mobile */
   .movie-card {
-    width: 75%;
   }
-}
-
-.movie-card-detail {
-  margin: 10px;
-  padding-left: 10px;
-}
-
-.movie-card-title {
-  font-size: 20px;
-  color: blue;
 }
 
 .popup {
