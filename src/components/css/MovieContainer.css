@@ -1,3 +1,18 @@
 .center-title {
+  color: white;
   text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  .center-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* mobile */
+  .center-title {
+    font-size: 40px;
+  }
 }

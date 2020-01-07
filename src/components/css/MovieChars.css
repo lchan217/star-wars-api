@@ -1,6 +1,21 @@
 .movie-char-grid {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(15, 50px);
+}
+
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  .movie-char-grid {
+    grid-auto-flow: column;
+
+    /* explicit grid; second arg is height*/
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(15, 30px);
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* mobile */
+  .movie-char-grid {
+    grid-row-gap: 10px;
+  }
 }
