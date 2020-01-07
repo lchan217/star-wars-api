@@ -1,9 +1,23 @@
-body {
-  margin: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: rgba(150, 150, 150, 0.5); */
-  height: 150%;
-  background-image: url("https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200");
+@media screen and (min-width: 1140px) {
+  /* desktop */
+  body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgba(150, 150, 150, 0.5); */
+    height: 150%;
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200");
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* mobile */
+  body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgba(150, 150, 150, 0.5); */
+    background-size: cover;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a8789d6e45a7c67346288d5/1520549382609-TO9COLE54YFGGFPJBQYU/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fKTrY37saURwPBw8fO2esROAxn-RKSrlQamlL27g22X2A/Starfield-Stars-Universe-FlyBy-Motion-Background-Video-Loop-Sample2-1.jpg?format=2500w");
+  }
 }
 
 h1 {
