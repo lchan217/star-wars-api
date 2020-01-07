@@ -1,14 +1,17 @@
+.movie-card {
+  padding: 5px;
+  display: grid;
+}
+
 @media screen and (min-width: 1140px) {
   /* desktop */
   .movie-card {
-    padding: 5px;
   }
 }
 
 @media screen and (max-width: 1140px) {
   /* mobile */
   .movie-card {
-    padding: 5px;
     width: 75%;
   }
 }
