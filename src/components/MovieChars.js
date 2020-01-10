@@ -14,7 +14,7 @@ class MovieChars extends Component {
   componentDidMount() {
     //push all character urls into an array
     let urls = [];
-    this.props.movie.characters.map(char => {
+    this.props.movie.characters.forEach(char => {
       urls.push(char);
     });
 
