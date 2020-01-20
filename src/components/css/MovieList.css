@@ -8,26 +8,15 @@
   .movie-date {
     text-align: right;
   }
-
-  .close-button {
-    top: 5px;
-    right: 5px;
-  }
 }
 
 @media screen and (min-width: 1140px) {
   /* desktop */
   .movie-card {
-    width: 150px;
-    height: 100px;
+    width: 12em;
+    height: 8em;
     background-color: rgb(79, 152, 214);
-
-    border-radius: 5px;
-  }
-
-  .close-button {
-    top: 15px;
-    right: 15px;
+    border-radius: 0.3em;
   }
 }
 
@@ -35,16 +24,18 @@
   position: absolute;
   background-color: Transparent;
   border: none;
+  top: 1.3em;
+  right: 1.3em;
 }
 
 .movie-date {
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 .movie-card {
   color: white;
-  padding: 20px; /*  change area inside boxes */
-  margin: 5px; /* change area around boxes */
+  padding: 1em; /*  change area inside boxes */
+  margin: 0.5em; /* change area around boxes */
   text-align: center;
 }
 
@@ -60,7 +51,7 @@
   bottom: auto;
 
   background: rgb(240, 240, 240);
-  padding: 20px;
+  padding: 2em;
 
   /* whole box is centered */
   margin-left: auto;
