@@ -1,3 +1,8 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .movie-card-grid {
   display: grid;
 }
@@ -11,17 +16,16 @@
   /* desktop */
   .movie-card-grid {
     /* explicit grid; 1st arg is #times you repeat, 2nd arg is space btwn columns*/
-    grid-template-columns: repeat(4, 180px);
-    margin-left: 250px;
+    grid-template-columns: repeat(4, 14em);
   }
   .center-title {
-    font-size: 60px;
+    font-size: 4em;
   }
 }
 
 @media screen and (max-width: 1140px) {
   /* mobile */
   .center-title {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 }

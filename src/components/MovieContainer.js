@@ -50,10 +50,14 @@ class MovieContainer extends Component {
       // sorted data passed as props to MovieList
       data = sorted.map((movie, index) => <MovieList key={index} {...movie} />);
 
-      return <div className='movie-card-grid'> {data} </div>;
+      return (
+        <div className='wrapper'>
+          <div className='movie-card-grid'> {data} </div>
+        </div>
+      );
     }
     return (
-      <div className='star-wars-movies'>
+      <div>
         <br />
         <div>{data}</div>
       </div>
