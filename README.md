@@ -1,4 +1,4 @@
-# axel-arigato-star-wars
+# star-wars
 
 App that fetches from Starwars API to show a list of movies sorted chronologically. If a movie is clicked, a list of characters will pop open.
 
