@@ -14,7 +14,7 @@ class MovieContainer extends Component {
 
   componentDidMount() {
     // fetch list of movies and add to state
-    fetch("https://swapi.co/api/films")
+    fetch("https://swapi.dev/api/films")
       .then(response => response.json())
       .then(response => {
         this.setState({
