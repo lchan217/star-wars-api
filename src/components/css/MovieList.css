@@ -26,6 +26,8 @@
   border: none;
   top: 1.3em;
   right: 1.3em;
+  cursor: pointer;
+  outline: none;
 }
 
 .movie-date {
@@ -37,6 +39,7 @@
   padding: 1em; /*  change area inside boxes */
   margin: 0.5em; /* change area around boxes */
   text-align: center;
+  cursor: pointer;
 }
 
 .popup {
